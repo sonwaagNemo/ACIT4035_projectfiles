@@ -53,6 +53,16 @@ You can start making predictions using the following command from terminal
    ```cmd
     python classifier.py
 
+## Using classifyer with live data from IMU
+1. **In liveTest.py**
+   make sure you change the serial port to the one you are connected to the arduino
+   ```cmd
+    ser = serial.Serial('COM5', 9600, timeout=1)
+2. **From terminal**
+   To start the live testeing with the model use this command in your terminal
+   ```cmd
+    python liveTest.py
+
 ## Notes
 
 - Ensure your input data matches the format expected by the model, which is likely specified in `classifier.py`.
